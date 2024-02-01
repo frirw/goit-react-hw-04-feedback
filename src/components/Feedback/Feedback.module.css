@@ -1,0 +1,16 @@
+.feedbackList {
+  display: block;
+}
+
+.option {
+  display: inline;
+  margin-right: 10px;
+}
+
+.buttonFeedback {
+  background-color: lightpink;
+  border-color: plum;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px lightcoral;
+  width: 100px;
+}
