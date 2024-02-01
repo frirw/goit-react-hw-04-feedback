@@ -18,20 +18,18 @@ const ButtonFeedback = styled.button`
   width: 100px;
 `;
 
-function Feedback({ options, leaveFeedback }) {
+const Feedback = ({ options, leaveFeedback }) => {
   return (
     <FeedbackList>
-      {options.map(option => {
-        return (
-          <Option key={option}>
-            <ButtonFeedback name={option} onClick={leaveFeedback} type="button">
-              {option}
-            </ButtonFeedback>
-          </Option>
-        );
-      })}
+      {options.map(option => (
+        <Option key={option}>
+          <ButtonFeedback onClick={() => leaveFeedback(option)} type="button">
+            {option}
+          </ButtonFeedback>
+        </Option>
+      ))}
     </FeedbackList>
   );
-}
+};
 
 export default Feedback;
